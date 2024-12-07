@@ -1,0 +1,250 @@
+.icon_margin
+{
+    margin: 1rem;
+}
+
+.icon_width{
+    width: 50px;
+}
+
+.net_icon_width{
+    width: 100px;
+}
+
+.profile_spaced{
+    letter-spacing: 12px;
+}
+
+  
+
+.park_font
+{
+    font-family: "Parkinsans", sans-serif;
+    letter-spacing: 1px;
+}
+
+.tang_font
+{
+    font-family: "Tangerine", cursive;
+}
+
+
+.about_greet
+{
+    font-family: "Tangerine", cursive;
+    font-size: 10rem;
+}
+
+.about_description
+{
+   font-family: "Parkinsans", sans-serif;
+   font-size: 2rem;
+}
+
+/* Skill Section Styles */
+/* Scoped Skill Section Styles */
+.skills-section {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .skills-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .skills-section .skill_height {
+    padding: 20px;
+  }
+  
+  .skills-section .list-group {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  .skills-section .list-group-item {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .skills-section .list-group-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+/* Tech-Stack Section Styles */
+.tech-stack-section {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Heading Styles */
+  .tech-stack-section .tech-stack-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 30px;
+  }
+  
+  /* Icon Container Styles */
+  .tech-stack-section .tech-stack-icons {
+    gap: 20px; /* Add spacing between items */
+    flex-wrap: wrap;
+  }
+  
+  /* Tech Stack Item */
+  .tech-stack-section .tech-stack-item {
+    width: 100px;
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  /* Icon Styles */
+  .tech-stack-section .tech-stack-icon {
+    font-size: 3rem;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  .tech-stack-section .tech-stack-icon:hover {
+    transform: scale(1.2);
+    color: #ff6b6b; /* Add a hover color for the icons */
+  }
+  
+  /* Tech Stack Name */
+  .tech-stack-section .tech-stack-name {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #495057;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 992px) { /* Medium screens (e.g., tablets) */
+    .tech-stack-section .tech-stack-heading {
+      font-size: 2rem;
+    }
+    .tech-stack-section .tech-stack-icon {
+      font-size: 2.5rem;
+    }
+    .tech-stack-section .tech-stack-name {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 768px) { /* Small screens (e.g., portrait tablets and large phones) */
+    .tech-stack-section .tech-stack-heading {
+      font-size: 1.8rem;
+    }
+    .tech-stack-section .tech-stack-icons {
+      justify-content: center; /* Center-align icons on smaller screens */
+    }
+    .tech-stack-section .tech-stack-item {
+      width: 80px; /* Reduce width */
+    }
+    .tech-stack-section .tech-stack-icon {
+      font-size: 2rem;
+    }
+    .tech-stack-section .tech-stack-name {
+      font-size: 0.85rem;
+    }
+  }
+  
+  @media (max-width: 576px) { /* Extra small screens (e.g., phones) */
+    .tech-stack-section .tech-stack-heading {
+      font-size: 1.5rem;
+    }
+    .tech-stack-section .tech-stack-item {
+      width: 70px; /* Further reduce width */
+    }
+    .tech-stack-section .tech-stack-icon {
+      font-size: 1.8rem;
+    }
+    .tech-stack-section .tech-stack-name {
+      font-size: 0.75rem;
+    }
+  }
+
+
+  /* Media Queries for Responsiveness */
+@media (max-width: 992px) { /* Medium screens (e.g., tablets) */
+    .skills-section h1 {
+      font-size: 2rem;
+    }
+    .skills-section .list-group-item {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  }
+  
+  @media (max-width: 768px) { /* Small screens (e.g., portrait tablets and large phones) */
+    .skills-section h1 {
+      font-size: 1.8rem;
+    }
+    .skills-section .list-group-item {
+      font-size: 0.95rem;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 576px) { /* Extra small screens (e.g., phones) */
+    .skills-section h1 {
+      font-size: 1.5rem;
+    }
+    .skills-section .list-group-item {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+    .skill-text
+    { 
+        font-size: 0.9rem;
+    }
+  }
+
+  /* Media Queries */
+@media (max-width: 992px) { /* Medium devices (tablets) */
+    .about_greet {
+      font-size: 8rem; /* Slightly smaller font size for tablets */
+    }
+    .about_description {
+      font-size: 1.8rem; /* Adjust description size */
+    }
+    .park_font {
+      font-size: 1.2rem; /* Reduce paragraph text size */
+    }
+  }
+  
+  @media (max-width: 768px) { /* Small devices (large phones) */
+    .about_greet {
+      font-size: 6rem; /* Further reduce greeting size */
+    }
+    .about_description {
+      font-size: 1.6rem; /* Adjust description size */
+    }
+    .park_font {
+      font-size: 1.1rem; /* Adjust font size for readability */
+      line-height: 1.5; /* Increase line height for better spacing */
+    }
+  }
+  
+  @media (max-width: 576px) { /* Extra small devices (phones) */
+    .about_greet {
+      font-size: 4.5rem; /* Compact size for smaller screens */
+    }
+    .about_description {
+      font-size: 1.4rem; /* Further reduce description size */
+    }
+    .park_font {
+      font-size: 0.9rem; /* Compact paragraph text */
+      line-height: 1.4;
+      text-align: justify; /* Ensure clean alignment on narrow screens */
+    }
+  }
+  

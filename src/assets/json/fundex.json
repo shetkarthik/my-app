@@ -1,0 +1,14 @@
+{"fundex": 
+    {
+      "pname": "Fund-Ex",
+      "pdesc": "Fund-Ex is an all-in-one loan application platform with client and server-side rendering. Apply for and manage personal, home, business, and education loans seamlessly."
+    },
+  "features": 
+    {
+      "keyfeature": "Apply for personal, home, business, and education loans, offering users a diverse range of financial solutions.",
+      "keyfeature2": "Streamline the loan application process with an intuitive and user-friendly interface, ensuring a hassle-free experience",
+      "keyfeature3": "Implement automated notifications to keep users informed about application updates, approvals, and any additional requirements",
+      "keyfeature4": "Integrate a loan calculator to help users estimate monthly payments, interest rates, and the overall cost of the loan"
+    }
+   
+}

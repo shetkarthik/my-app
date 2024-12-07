@@ -1,0 +1,32 @@
+<nav class="navbar fixed-top navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a routerLink="/" class="navbar-brand">
+        <!-- <i class="fa-solid fa-forward nav_icon"></i> -->
+        <img src="https://t4.ftcdn.net/jpg/03/22/36/29/360_F_322362986_u2uebjG2ipbmUuflAbCy615pcQUseNqO.jpg" alt="" class="logo_icon">
+      </a>
+      <!-- Button Section -->
+      <button *ngIf="!isHomeRoute" class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div *ngIf="!isHomeRoute" class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav m-auto">
+          <a class="text-center nav-link" routerLink="/" routerLinkActive="active">Home</a>
+          <a class="text-center nav-link" routerLink="/about-me" routerLinkActive="active">About</a>
+          <a class="text-center nav-link" routerLink="/projects" routerLinkActive="active">Projects</a>
+          <a class="text-center nav-link" routerLink="/contact-me" routerLinkActive="active">Contact</a>
+         
+
+        </div>
+      </div>
+    
+    </div>
+  </nav>
+  
+
+
+
+
+<router-outlet></router-outlet>

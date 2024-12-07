@@ -1,0 +1,89 @@
+.project_background
+{
+    background: url("https://imgcdn.stablediffusionweb.com/2024/9/26/f215ee70-4ce7-4c03-87ec-fe26a9f2b7d3.jpg");
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.project_letter_spaced{
+    letter-spacing: 12px;
+}
+
+.project_card_title{
+   
+    text-align: center;
+    font-size: large;
+    letter-spacing: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Parkinsans", sans-serif;
+    letter-spacing: 1px;
+}
+
+.project_font{
+    font-family: "Parkinsans", sans-serif;
+    
+
+}
+
+.card_font
+{
+    font-size: 0.9rem;
+}
+
+.project_logo{
+    border: 1px solid;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.icon_width
+{
+    font-size: 4.5rem;
+    display: block;
+    margin: auto;
+    margin-top: 4rem;
+
+}
+
+
+/* .fa-wolf-pack-battalion{
+    transition: all ease-in 0.3s;
+    color: #0d6efd;
+}
+
+.fa-money-bill-transfer{
+    transition: all ease-in 0.3s;
+    color: #198754;
+}
+
+.fa-pills{
+    transition: all ease-in 0.3s;
+    color: #fd7e14;
+}
+
+.fa-bag-shopping{
+    transition: all ease-in 0.3s;
+    color: #6f42c1;
+} */
+
+.project_container
+{
+    display: grid;
+        place-content: center;
+        align-items: center;
+        height: 100%;
+}
+.project-heading
+{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 30px;
+}
+.park_font
+{
+    font-family: "Parkinsans", sans-serif;
+    letter-spacing: 1px;
+}

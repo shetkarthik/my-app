@@ -1,0 +1,16 @@
+{
+    "ecma": 
+    {
+      "pname": "ECMA",
+      "pdesc": " Online destination for luxury bags, offering a curated selection of premium brands and exclusive designs. Elevate your style with timeless elegance and sophistication."
+    },
+  "features": 
+    {
+      "keyfeature": "Explore an extensive collection of luxury bags with a user-friendly brand-centric search",
+      "keyfeature2": "Efficiently manage product listings, inventory, and order fulfillment through a robust admin dashboard",
+      "keyfeature3": "Experience a visually appealing and interactive interface designed for seamless navigation.",
+      "keyfeature4": "Offer a seamless shopping experience across devices with a responsive and mobile-friendly design"
+    }
+  
+}
+
