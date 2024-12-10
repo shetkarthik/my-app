@@ -1,0 +1,157 @@
+/* Container Styling */
+.con_container {
+    height: 100%; /* Full height of the column */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(to bottom, #f3f3f3, #d9d9d9); 
+    
+    /* Subtle background */
+}
+
+.contact_greet {
+    font-size: 11vw;
+    color: #333;
+    font-weight: bold;
+  
+    letter-spacing: 1px;
+    font-family: "Tangerine", cursive;
+
+}
+
+/* Heading Styling */
+.contact_heading {
+    display: flex;
+    flex-wrap: wrap; /* Wrap letters on smaller screens */
+    justify-content: center;
+    font-size: 12vw; /* Responsive font size */
+   
+    color: white;
+    gap: 0.5rem; /* Add spacing between letters */
+    font-family: "Parkinsans", sans-serif;
+    letter-spacing: 1px;
+}
+
+.contact_heading span {
+    display: inline-block;
+    font-size: inherit;
+    color: white;
+    text-shadow: 1px 1px 0 #000, 
+                 -1px -1px 0 #000, 
+                 -1px 1px 0 #000, 
+                  1px -1px 0 #000;
+    animation: colorShift 2s infinite;
+}
+
+/* Add delay for each letter animation */
+.contact_heading span:nth-child(1) { animation-delay: 0s; }
+.contact_heading span:nth-child(2) { animation-delay: 0.2s; }
+.contact_heading span:nth-child(3) { animation-delay: 0.4s; }
+.contact_heading span:nth-child(4) { animation-delay: 0.6s; }
+.contact_heading span:nth-child(5) { animation-delay: 0.8s; }
+.contact_heading span:nth-child(6) { animation-delay: 1s; }
+.contact_heading span:nth-child(7) { animation-delay: 1.2s; }
+
+/* Animation Keyframes */
+@keyframes colorShift {
+    0%, 100% {
+        color: white;
+        text-shadow: 1px 1px 0 #000, 
+                     -1px -1px 0 #000, 
+                     -1px 1px 0 #000, 
+                      1px -1px 0 #000;
+    }
+    50% {
+        color: black;
+        text-shadow: none;
+    }
+}
+
+/* Icon Section Styling */
+.icon_bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url("../../assets/images/home_walli.jpg");
+    background-size: cover; /* Ensures the image covers the area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contact_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 2rem;
+    gap: 2rem; /* Uniform spacing between icons */
+}
+
+.icon_font {
+    font-size: 5rem;
+    color: white;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.icon_font:hover {
+    transform: scale(1.2); /* Slight zoom effect */
+    color: #ffffff; /* Highlight on hover */
+}
+
+/* Responsive Media Queries */
+@media (max-width: 992px) {
+    .contact_greet {
+        font-size: 11vw;
+    }
+
+    .contact_heading {
+        font-size: 12vw;
+    }
+
+    .icon_font {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact_greet {
+        font-size: 9vw;
+    }
+
+    .contact_heading {
+        font-size: 14vw;
+    }
+
+    .contact_box {
+        gap: 1.5rem;
+    }
+
+    .icon_font {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .con_container {
+        padding: 1rem;
+    }
+
+    .contact_greet {
+        font-size: 12vw;
+    }
+
+    .contact_heading {
+        font-size: 16vw;
+        gap: 0.3rem;
+    }
+
+    .icon_font {
+        font-size: 4rem;
+    }
+}

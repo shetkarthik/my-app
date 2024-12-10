@@ -15,11 +15,5 @@ export class LogoComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit(): void {
-    // Check the current route whenever it changes
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        this.isHomeRoute = this.router.url === '/';
-      }
-    });
   }
 }

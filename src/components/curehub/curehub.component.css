@@ -1,0 +1,404 @@
+.proj_back_curehub_image {
+    display: grid ;
+    place-content: center;
+    height: 100vh;
+    background: url("../../assets/data/curehub/curehome.png");
+    background-size: contain;
+    position: relative;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    scale: 0.8;
+
+}
+
+
+.letter_design{
+font-size: 11rem;
+text-align: center;
+font-family: "Parkinsans", sans-serif;
+}
+
+.text_section
+{
+
+background-color: black;
+place-content: center;
+}
+
+.content-wrapper {
+background-color: rgba(0, 0, 0, 0.7); /* Black tint */
+color: white;
+padding: 20px;
+border-radius: 8px;
+max-width: 600px;
+text-align: center;
+}
+
+.features ul {
+list-style: none;
+padding: 0;
+}
+
+.features li {
+margin: 10px 0;
+font-size: 16px;
+}
+
+.profile_spaced{
+letter-spacing: 12px;
+}
+
+
+
+.park_font
+{
+font-family: "Parkinsans", sans-serif;
+letter-spacing: 1px;
+}
+
+.tang_font
+{
+font-family: "Tangerine", cursive;
+}
+
+.tech-stack-section {
+font-family: 'Poppins', sans-serif;
+}
+
+/* Heading Styles */
+.tech-stack-section .tech-stack-heading {
+font-size: 2.5rem;
+font-weight: bold;
+color: #343a40;
+margin-bottom: 30px;
+}
+
+/* Icon Container Styles */
+.tech-stack-section .tech-stack-icons {
+gap: 20px; /* Add spacing between items */
+flex-wrap: wrap;
+}
+
+/* Tech Stack Item */
+.tech-stack-section .tech-stack-item {
+width: 100px;
+text-align: center;
+margin: 10px 0;
+}
+
+/* Icon Styles */
+.tech-stack-section .tech-stack-icon {
+font-size: 3rem;
+transition: transform 0.3s, color 0.3s;
+}
+
+.tech-stack-section .tech-stack-icon:hover {
+transform: scale(1.2);
+color: #ff6b6b; /* Add a hover color for the icons */
+}
+
+/* Tech Stack Name */
+.tech-stack-section .tech-stack-name {
+margin-top: 10px;
+font-size: 1rem;
+font-weight: 500;
+color: #495057;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) { /* Medium screens (e.g., tablets) */
+.tech-stack-section .tech-stack-heading {
+font-size: 2rem;
+}
+.tech-stack-section .tech-stack-icon {
+font-size: 2.5rem;
+}
+.tech-stack-section .tech-stack-name {
+font-size: 0.9rem;
+}
+}
+
+@media (max-width: 768px) { /* Small screens (e.g., portrait tablets and large phones) */
+.tech-stack-section .tech-stack-heading {
+font-size: 1.8rem;
+}
+.tech-stack-section .tech-stack-icons {
+justify-content: center; /* Center-align icons on smaller screens */
+}
+.tech-stack-section .tech-stack-item {
+width: 80px; /* Reduce width */
+}
+.tech-stack-section .tech-stack-icon {
+font-size: 2rem;
+}
+.tech-stack-section .tech-stack-name {
+font-size: 0.85rem;
+}
+}
+
+@media (max-width: 576px) { /* Extra small screens (e.g., phones) */
+.tech-stack-section .tech-stack-heading {
+font-size: 1.5rem;
+}
+.tech-stack-section .tech-stack-item {
+width: 70px; /* Further reduce width */
+}
+.tech-stack-section .tech-stack-icon {
+font-size: 1.8rem;
+}
+.tech-stack-section .tech-stack-name {
+font-size: 0.75rem;
+}
+}
+
+/* Overall Features Section */
+.features-section {
+background: black;;
+color: white;
+padding: 50px 20px;
+text-align: center;
+border-top: 11px solid white;
+}
+
+/* Header Styling */
+.features-header {
+margin-bottom: 30px;
+}
+
+.features-title {
+font-size: 5rem;
+font-weight: 500;
+letter-spacing: 2px;
+text-transform: capitalize;
+color: white;
+}
+
+/* Features List Styling */
+.features-list {
+list-style: none;
+padding: 0;
+margin: 0 auto;
+max-width: 800px;
+text-align: left;
+}
+
+.features-list li {
+font-size: 1rem;
+line-height: 1.8;
+margin: 10px 0;
+border-left: 3px solid #fff; /* Decorative border */
+padding-left: 10px; /* Spacing for text */
+transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Media Queries for Smaller Devices */
+@media (max-width: 992px) {
+.proj_back_curehub_image {
+    height: 80vh;
+    background-attachment: scroll;
+}
+.proj_desc
+{
+    font-size: 0.8rem;
+}
+
+.letter_design {
+    font-size: 4rem;
+}
+
+.features-title {
+    font-size: 2.5rem;
+}
+
+.features-list li {
+    font-size: 0.9rem;
+}
+
+.tech-stack-section .tech-stack-item {
+    width: 70px;
+}
+
+.tech-stack-section .tech-stack-icon {
+    font-size: 2rem;
+}
+}
+
+@media (max-width: 768px) {
+.proj_back_curehub_image {
+    height: 60vh;
+}
+
+.letter_design {
+    font-size: 3rem;
+}
+
+.proj_desc
+{
+    font-size: 0.8rem;
+}
+
+.text_section {
+    padding: 15px;
+}
+
+.features-title {
+    font-size: 2rem;
+}
+
+.features-list li {
+    font-size: 0.85rem;
+}
+
+.tech-stack-section .tech-stack-icon {
+    font-size: 1.8rem;
+}
+
+.tech-stack-section .tech-stack-name {
+    font-size: 0.75rem;
+}
+}
+
+@media (max-width: 576px) {
+.proj_back_curehub_image {
+    height: 50vh;
+}
+
+.proj_desc
+{
+    font-size: 0.6rem;
+}
+
+.letter_design {
+    font-size: 2.5rem;
+}
+
+.features-title {
+    font-size: 1.8rem;
+}
+
+.features-list li {
+    font-size: 0.6rem;
+}
+
+.tech-stack-section .tech-stack-item {
+    width: 60px;
+}
+
+.tech-stack-section .tech-stack-icon {
+    font-size: 1.5rem;
+}
+
+.tech-stack-section .tech-stack-name {
+    font-size: 0.65rem;
+}
+}
+
+/* Image Grid Container */
+.image-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Dynamic grid with minimum size */
+gap: 15px; /* Space between grid items */
+padding: 20px; /* Space around the grid */
+margin: 0 auto;
+}
+
+/* Image Styling */
+.image-grid img {
+width: 100%; /* Ensure images take full width of their grid cell */
+height: auto; /* Maintain aspect ratio */
+border-radius: 8px; /* Optional: Add rounded corners */
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a modern look */
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effects */
+.image-grid img:hover {
+transform: scale(1.05); /* Slight zoom on hover */
+box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+.image-grid {
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Smaller grid cells for narrow screens */
+  gap: 10px; /* Reduce space between grid items */
+}
+}
+
+@media (max-width: 576px) {
+.image-grid {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Further adjust grid for very small devices */
+}
+}
+
+/* Grid Styles */
+.image-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+gap: 20px;
+}
+
+.grid-image {
+width: 100%;
+height: auto;
+cursor: pointer;
+transition: transform 0.3s;
+}
+
+.grid-image:hover {
+transform: scale(1.1);
+}
+
+/* Modal Styles */
+.image-modal {
+display: flex;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+justify-content: center;
+align-items: center;
+background: rgba(0, 0, 0, 0.8);
+z-index: 9999;
+}
+
+.close-modal {
+position: absolute;
+top: 10px;
+right: 20px;
+font-size: 2rem;
+color: white;
+cursor: pointer;
+transition: transform 0.3s;
+}
+
+.close-modal:hover {
+transform: scale(1.2);
+}
+
+.modal-content {
+max-width: 80%;
+max-height: 80%;
+border-radius: 10px;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+from {
+  opacity: 0;
+}
+to {
+  opacity: 1;
+}
+}
+
+
+
+
+
+
+
+

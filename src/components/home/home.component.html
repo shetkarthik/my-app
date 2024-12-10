@@ -1,95 +1,21 @@
-<div *ngIf="isSmallScreen; else largeScreen">
-  <div class="host">
+<div class='container-fluid mt-5 overflow-hidden home_background'>
+  <div class="row">
 
-    
-  
-    <div class="grid-container">
-    
-      <div class="vertical-bar">
-        <div class="grid-item" routerLink="/">
-          <i class="fa-solid fa-house home_logo"></i>
-  
-        </div>
-        <div class="grid-item" routerLink="/about-me">
-          <i class="fa-solid fa-user-tie home_logo"></i>
-     
-        </div>
-        <div class="grid-item" routerLink="/projects">
-          <i class="fa-solid fa-diagram-project home_logo"></i>
-        
-        </div>
-        <div class="grid-item" routerLink="/contact-me">
-          <i class="fa-solid fa-mobile-screen home_logo"></i>
-       
-        </div>
-      </div>
-      
-      
-      
-      
-      </div>
-  </div>
-      </div>
-    <ng-template #largeScreen>
-      <div class='container mt-5 home_width'>
-      <div class="row">
-        <div class="col-lg-1 col-md-1 col-sm-1 col-0 mt-5  text-dark p-0 border_back">
-       
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-2 col-12 mt-5 text-dark p-0">
-           <div class="text-secondary">
-              <h1 class="display-1 letter_design pe-1 text_hover">H</h1>
-              <h1 class="display-1 letter_design pe-1 text_hover">O</h1>
-              <h1 class="display-1 letter_design pe-1 text_hover">M</h1>
-              <h1 class="display-1 letter_design pe-1 text_hover">E</h1>
-           </div>
-                  
-        </div> 
-        <div class="col-lg-8 col-md-8 col-sm-8 col-12 mt-5 text-dark p-0">
-          <div class="mb-2" routerLink="/projects" routerLinkActive="active">
-            <span class="display-1 letter_design pe-1 proj_hover">P</span>        
-            <span class="display-1 letter_design pe-1 proj_hover">R</span>   
-            <span class="display-1 letter_design pe-1 proj_hover">O</span>   
-            <span class="display-1 letter_design pe-1 proj_hover">J</span>   
-            <span class="display-1 letter_design pe-1 proj_hover">E</span>   
-            <span class="display-1 letter_design pe-1 proj_hover">C</span>       
-            <span class="display-1 letter_design pe-1 proj_hover">T</span> 
-            <span class="display-1 letter_design pe-1 proj_hover">S</span>  
-          </div>
-          <div class="mb-2" routerLink="/about-me" routerLinkActive="active">
-            <span class="display-1 letter_design pe-1 text_hover">A</span>        
-            <span class="display-1 letter_design pe-1 text_hover">B</span>   
-            <span class="display-1 letter_design pe-1 text_hover">O</span>   
-            <span class="display-1 letter_design pe-1 text_hover">U</span>   
-            <span class="display-1 letter_design pe-1 text_hover">T</span>  
-      
-          </div>
-        
-          <div class="mb-2" routerLink="/contact-me" routerLinkActive="active">
-            <span class="display-1 letter_design pe-1 text_hover">C</span>        
-            <span class="display-1 letter_design pe-1 text_hover">O</span>   
-            <span class="display-1 letter_design pe-1 text_hover">N</span>   
-            <span class="display-1 letter_design pe-1 text_hover">T</span>   
-            <span class="display-1 letter_design pe-1 text_hover">A</span>   
-            <span class="display-1 letter_design pe-1 text_hover">C</span>       
-            <span class="display-1 letter_design pe-1 text_hover">T</span> 
-           
-          </div>
-          <div class="mb-2 border_back">
-            
-        
-           
-          </div>
-          <div class="border_back h-25">
-  
-          </div>
-        </div> 
-        <div class="col-lg-1 col-md-1 col-sm-1 col-0 mt-5 text-dark p-0 border_back">
-         
-        </div>
+    <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+      <img src="../../assets/images/home_imageed.jpg" class="img-fluid d-block m-auto" alt="Home Image" />
+    </div>
+    <!-- Text Column -->
+    <div class="col-lg-5 col-md-5 col-sm-12 col-12 width_container">
+      <div class="info_container">
+        <h1 class="about_greet">Hi!</h1>
+        <p class="park_font fs-5">I am Karthik - 
+          <span class="fw-bold">Full stack Developer</span>
+        </p>
+        <p class="park_font fs-5">Let’s explore the world of innovation, creativity, and technology together</p>
+        <button class="btn btn-dark park_font p-3 fs-5 d-block m-auto" routerLink="/about-me" routerLinkActive="active">Explore</button>
       </div>
     </div>
-    </ng-template>
+    <!-- Image Column -->
     
-
-
+  </div>
+</div>

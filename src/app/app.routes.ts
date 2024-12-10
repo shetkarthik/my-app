@@ -4,6 +4,9 @@ import { AboutComponent } from '../components/about/about.component';
 import { ContactComponent } from '../components/contact/contact.component';
 import { ProjectComponent } from '../components/project/project.component';
 import { TrendvibeComponent } from '../components/trendvibe/trendvibe.component';
+import { FundexComponent } from '../components/fundex/fundex.component';
+import { CurehubComponent } from '../components/curehub/curehub.component';
+import { EcmaComponent } from '../components/ecma/ecma.component';
 
 
 export const routes: Routes = [
@@ -30,6 +33,21 @@ export const routes: Routes = [
       {
         path: 'projects/trendvibe',
         component: TrendvibeComponent,
+        pathMatch: 'full'
+      },
+      {
+        path: 'projects/fundex',
+        component: FundexComponent,
+        pathMatch: 'full'
+      },
+      {
+        path: 'projects/curehub',
+        component: CurehubComponent,
+        pathMatch: 'full'
+      },
+      {
+        path: 'projects/ecma',
+        component: EcmaComponent,
         pathMatch: 'full'
       },
       {

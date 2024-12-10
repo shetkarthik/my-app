@@ -1,378 +1,112 @@
-.display-font{
-    font-size: 25pc;
-    font-weight: bold;
-    text-align: center;
- 
-}
-.home_background {
-    position: relative;
-    height: 100vh;
-}
 
-.letter_design{
-    font-size: 9rem;
-    text-align: center;
+.container-fluid {
+    padding: 0;
+  }
+  
+  .home_background {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    scale: 0.9;
+  }
+  
+  .park_font {
     font-family: "Parkinsans", sans-serif;
-}
-
-.proj_hover{
-    background-color: black;
-    color: white;
-}
-
-.proj_hover:hover
-{
-   cursor: pointer;
-   background-color: white;
-   color: black;
-  
- 
-}
-
-.text_hover:hover
-{
-    cursor: pointer;
-    background-color: black;
-    color: white;
-}
-
-.border_back
-{
-    
-    background: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA3L3JtNTYwLWItMTRiLXguanBn.jpg');
-    background-size : cover;
-}
-
-.quote-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    max-width: 600px;
-    margin: 50px auto;
-    background: rgba(255, 255, 255, 0.8);/* Light parchment background */
-    border-radius: 12px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    font-family: 'Georgia', serif; /* Elegant serif font for authenticity */
+    letter-spacing: 1px;
   }
   
-  .quote {
-    font-size: 0.8rem; /* Larger font size for the quote */
-    font-style: italic; /* Italics for the quote */
-    color: #000000; /* Dark teal for contrast */
-    margin-bottom: 6px;
+  .tang_font {
+    font-family: "Tangerine", cursive;
   }
   
-  .author {
-    font-size: 0.8rem; /* Slightly smaller font for the author */
-    font-weight: bold; /* Bold text for emphasis */
-    color: #000000; /* Warm color for the author's name */
-    margin-top: 10px;
-  }
-
-  .home_logo
-  {
-    font-size :x-large;
-    color: rgb(255, 255, 255);
-    border: 2px solid;
-    padding: 20px;
-    border-radius: 50%;
+  .about_greet {
+    font-family: "Tangerine", cursive;
+    font-size: 6vw; 
+    margin-bottom: 20px;
   }
   
-
-.home_logo_design
-{
-    font-size: 7.5rem;
-    rotate: 90deg;
-    animation: moveSideToSide 1.5s ease-in-out infinite;
-}
-
-
-
-.home_content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff; 
-}
-
-
-.home_font{
-    font-size: 3.5rem;
-    letter-spacing: 3px;
-}
-
-.home_image{
-    transform: scale(0.6);
-}
-
-.home_width {
-    width: 100%;
-    overflow: hidden;
-    
-}
-
-.net_icon_width{
-    width: 100px;
-}
-
-.first_text_block{
-    background-color: black;
-    color: white;
-   
-}
-
-.font_poppin{
-    font-family: 'poppins';
-    text-align: 'center';
-}
-
-
-
-.icon_width{
-    width: 50px;
-}
-
-.list-group-item{
-padding: 12px;
-    border-bottom: 1px solid;
-}
-
-.skill_height{
-    height: 50vh;
-}
-
-
-.skills_container_width{
-  
-    border: 1px solid;
-    border-radius: 0;
-}
-
-.profile_spaced{
-    letter-spacing: 12px;
-}
-.skills_spaced{
-    letter-spacing: 6px;
-}
-
-.tech_name_spacing{
-    letter-spacing: 8px;
-}
-.icon_margin
-{
-    margin: 1rem;
-}
-
-.scaled::first-letter{
-  transform: scale(1.5);
-}
-
-.scaled{
-    transform: scale(0.6);
-}
-
-
-.first_line,
-.second_line {
-  display: none;
-  transition: display 0.2s ease-in-out;
-}
-
-.visible {
-    display: block;
-}
-
-.hidden {
-    display: none;
-}
-
-@keyframes moveSideToSide {
-    0% {
-        transform: translateX(0); /* Initial position */
-    }
-    50% {
-        transform: translateX(8 px); /* Move to the right */
-    }
-    100% {
-        transform: translateX(0); /* Return to initial position */
-    }
-}
-
-/* Ensure the page takes up the full height and width of the screen */
-:host {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    background-color: #f3f3f3;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    overflow: hidden;
-  }
-  
-  /* Container for the grid */
-  .grid-container {
+  .width_container {
     display: grid;
     place-content: center;
-    width: 100vw;
-    height: 100vh;
-    background: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA3L3JtNTYwLWItMTRiLXguanBn.jpg);
+    background: url("https://t3.ftcdn.net/jpg/04/16/66/78/360_F_416667889_yK5tFu9OYqGD4r7XqS8bbnHFA9o8QrcE.jpg");
+    background-repeat: no-repeat;
     background-size: contain;
-    position: relative;
-}
-/* Black Tint Overlay */
-
-.vertical-bar {
-    display: flex
-;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    align-items: center;
-
-    background: rgb(0, 0, 0);
-    padding: 20px;
-    width: 110px;
-    height: 70vh;
+  }
+  .info_container {
    
-}
-
-
-  
-
-  /* Individual grid items */
-  .grid-item {
-    display: flex;
-    flex-direction: column; /* Stack icon and label */
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #ffffff;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    padding: 10px 0;
+    padding: 20px;
   }
 
-.grid-item.top-item {
-    grid-column: span 2; /* Make the top item span across two columns */
-    height: 150px; /* Adjust height if needed */
-    font-size: 18px;
-    background: transparent;
-}
-
-  .grid-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  button.btn {
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
   }
-  
-  /* Text inside grid items */
-  .grid-item span {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-
+ 
+  /* Media queries for responsiveness */
+  @media (max-width: 1200px) {
+    .home_background {
+      height: auto;
+    }
     
-
-
-
-@media only screen and (max-width: 1200px) {
-    .letter_design {
-        font-size: 6rem;
+    .about_greet {
+      font-size: 8vw;
     }
 
-    .home_logo_design {
-        font-size: 6rem; /* Reduce icon size for medium screens */
+    button.btn {
+      padding: 12px 25px;
+      font-size: 0.95rem;
     }
-}
-
-@media only screen and (max-width: 992px) {
-    .letter_design {
-        font-size: 5rem;
+  }
+  
+  @media (max-width: 992px) {
+    .about_greet {
+      font-size: 10vw;
     }
-
-    .proj_hover:hover, .text_hover:hover {
-        background-color: grey; /* Softer hover effect for smaller screens */
+    p.park_font {
+      font-size: 1rem;
     }
-
-    .home_logo_design {
-        font-size: 5.5rem;
+    button.btn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
     }
-
-    .border_back {
-        background-size: contain; /* Avoid image stretching */
+  }
+  
+  @media (max-width: 768px) {
+    .about_greet {
+      font-size: 12vw;
     }
-}
-
-@media only screen and (max-width: 768px) {
-    .letter_design {
-        font-size: 4.5rem; /* Adjust font size for tablets */
+    p.park_font {
+      font-size: 0.9rem;
     }
-
-    .proj_hover, .text_hover {
-        padding: 5px; /* Reduce padding */
+    button.btn {
+      padding: 8px 18px;
+      font-size: 0.85rem;
     }
-
-    .home_logo_design {
-        font-size: 4rem;
+  
+    .img-fluid {
+      scale: 0.8;
     }
-
-    .border_back {
-        background-size: cover; /* Ensure consistent background image */
+  }
+  
+  @media (max-width: 576px) {
+    .about_greet {
+      font-size: 15vw;
     }
-}
-
-@media only screen and (max-width: 576px) {
-    
-    .letter_design {
-        font-size: 3.5rem; /* Shrink font size for smaller devices */
+    p.park_font {
+      font-size: 0.8rem;
     }
-
-    .home_logo_design {
-        font-size: 2.5rem;
+    button.btn {
+      padding: 5px 15px;
+      font-size: 0.8rem;
     }
-
-    .icon_width, .net_icon_width {
-        width: 40px; /* Smaller icon sizes for smaller screens */
+    .img-fluid {
+      scale: 0.7;
     }
-
-    .profile_spaced {
-        letter-spacing: 6px; /* Adjust spacing for better readability */
-    }
-
-    .tech_name_spacing {
-        letter-spacing: 4px;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .letter_design {
-        font-size: 3rem; /* Reduce font size for mobile phones */
-    }
-
-    .home_logo_design {
-        font-size: 2.5rem;
-    }
-
-    .proj_hover, .text_hover {
-        padding: 3px; /* Minimal padding for compact displays */
-        text-align: center;
-    }
-
-    .container {
-        padding: 0 10px; /* Reduce container padding */
-    }
-
-    .icon_margin {
-        margin: 0.5rem; /* Smaller margins for tighter spaces */
-    }
-}
+  }
+  

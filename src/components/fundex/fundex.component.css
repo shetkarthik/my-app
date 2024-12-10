@@ -1,14 +1,15 @@
-.proj_back_image {
-    display: grid ;
+.proj_back_fundex_image {
+        display: grid ;
         place-content: center;
         height: 100vh;
-        background: url("https://static.vecteezy.com/system/resources/previews/013/272/177/non_2x/line-art-minimal-of-fashion-business-woman-lifestyle-in-hand-drawn-concept-for-decoration-doodle-style-vector.jpg");
+        background: url("../../assets/data/fundex/fundex.jpg");
         background-size: contain;
         position: relative;
         overflow-x: hidden;
         background-repeat: no-repeat;
         background-position: center;
         scale: 0.8;
+
 }
 
 
@@ -153,7 +154,7 @@ font-family: 'Poppins', sans-serif;
 
 /* Overall Features Section */
 .features-section {
-    background: black;
+    background: black;;
     color: white;
     padding: 50px 20px;
     text-align: center;
@@ -193,8 +194,8 @@ font-family: 'Poppins', sans-serif;
 
 /* Media Queries for Smaller Devices */
 @media (max-width: 992px) {
-    .proj_back_image {
-        height: 100vh;
+    .proj_back_fundex_image {
+        height: 80vh;
         background-attachment: scroll;
     }
     .proj_desc
@@ -224,8 +225,8 @@ font-family: 'Poppins', sans-serif;
 }
 
 @media (max-width: 768px) {
-    .proj_back_image {
-        height: 70vh;
+    .proj_back_fundex_image {
+        height: 60vh;
     }
 
     .letter_design {
@@ -259,8 +260,8 @@ font-family: 'Poppins', sans-serif;
 }
 
 @media (max-width: 576px) {
-    .proj_back_image {
-        height: 70vh;
+    .proj_back_fundex_image {
+        height: 50vh;
     }
 
     .proj_desc
