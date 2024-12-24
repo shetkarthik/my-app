@@ -1,6 +1,6 @@
 .project_background
 {
-    background: url("../../assets/images/proj_image.jpg");
+    /* background: url("../../assets/images/proj_image.jpg"); */
     background-size: cover;
     height: 100vh;
     overflow: hidden;

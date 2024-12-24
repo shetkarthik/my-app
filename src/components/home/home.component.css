@@ -26,21 +26,52 @@
   
   .about_greet {
     font-family: "Tangerine", cursive;
-    font-size: 6vw; 
-    margin-bottom: 20px;
+    font-size: 10vw; 
+    
   }
+
+  .info_container
+  {
+    padding: 2rem;
+  }
+   
+
+  .card{
+     border: 2px solid;
+     border-radius: 0%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+
+  }
+
+  .icon_bg {
+    background:url("https://img.freepik.com/free-vector/hackathon-doodle-set-hand-drawn-icons-collection-programming-brainstorm-generation-ideas-deve_88138-1343.jpg?t=st=1734976272~exp=1734979872~hmac=2e10d36bedefb8931fbdb38ee32283832b6369ae1b9033b5edf4e43e0b497966&w=1380");
+   background-size: contain;
+}
   
   .width_container {
     display: grid;
     place-content: center;
-    background: url("https://t3.ftcdn.net/jpg/04/16/66/78/360_F_416667889_yK5tFu9OYqGD4r7XqS8bbnHFA9o8QrcE.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  .info_container {
+    text-align: center;
    
-    padding: 20px;
   }
+
+  /* .gif_container {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    padding: 2rem;
+    background: url("https://static.vecteezy.com/system/resources/previews/041/328/409/non_2x/shelving-black-and-white-2d-line-cartoon-object-modern-furniture-for-apartment-decor-shelves-with-books-and-vase-isolated-outline-item-home-interior-monochromatic-flat-spot-illustration-vector.jpg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    
+  
+  } */
+
+  
+
+ 
 
   button.btn {
     padding: 15px 30px;
@@ -48,65 +79,122 @@
     border-radius: 5px;
   }
  
-  /* Media queries for responsiveness */
-  @media (max-width: 1200px) {
-    .home_background {
-      height: auto;
-    }
-    
-    .about_greet {
-      font-size: 8vw;
-    }
+ /* Large desktops and laptops */
+@media (max-width: 1400px) {
+  .about_greet {
+    font-size: 8vw;
+  }
+  .home_background {
+    height: 90vh;
+  }
+  .img-fluid {
+    scale: 0.85;
+  }
+}
 
-    button.btn {
-      padding: 12px 25px;
-      font-size: 0.95rem;
-    }
+/* Medium desktops and small laptops */
+@media (max-width: 1200px) {
+  .home_background {
+    height: auto;
   }
-  
-  @media (max-width: 992px) {
-    .about_greet {
-      font-size: 10vw;
-    }
-    p.park_font {
-      font-size: 1rem;
-    }
-    button.btn {
-      padding: 10px 20px;
-      font-size: 0.9rem;
-    }
+  .about_greet {
+    font-size: 8vw;
   }
-  
-  @media (max-width: 768px) {
-    .about_greet {
-      font-size: 12vw;
-    }
-    p.park_font {
-      font-size: 0.9rem;
-    }
-    button.btn {
-      padding: 8px 18px;
-      font-size: 0.85rem;
-    }
-  
-    .img-fluid {
-      scale: 0.8;
-    }
+  button.btn {
+    padding: 12px 25px;
+    font-size: 0.95rem;
   }
-  
-  @media (max-width: 576px) {
-    .about_greet {
-      font-size: 15vw;
-    }
-    p.park_font {
-      font-size: 0.8rem;
-    }
-    button.btn {
-      padding: 5px 15px;
-      font-size: 0.8rem;
-    }
-    .img-fluid {
-      scale: 0.7;
-    }
+  .img-fluid {
+    scale: 0.8;
   }
+}
+
+/* Tablets and smaller laptops */
+@media (max-width: 992px) {
+  .about_greet {
+    font-size: 10vw;
+  }
+  p.park_font {
+    font-size: 1rem;
+  }
+  button.btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  .img-fluid {
+    scale: 0.75;
+  }
+}
+
+/* Large phones and small tablets */
+@media (max-width: 768px) {
+  .about_greet {
+    font-size: 12vw;
+  }
+  p.park_font {
+    font-size: 0.9rem;
+  }
+  button.btn {
+    padding: 8px 18px;
+    font-size: 0.85rem;
+  }
+  .img-fluid {
+    scale: 0.9;
+  }
+  .icon_bg {
+    background-size: cover;
+  }
+}
+
+/* Medium and small phones */
+@media (max-width: 576px) {
+  .about_greet {
+    font-size: 15vw;
+  }
+  p.park_font {
+    font-size: 0.8rem;
+  }
+  button.btn {
+    padding: 5px 15px;
+    font-size: 0.8rem;
+  }
+  .img-fluid {
+    scale: 0.9;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  .about_greet {
+    font-size: 18vw;
+  }
+  p.park_font {
+    font-size: 0.75rem;
+  }
+  button.btn {
+    padding: 4px 12px;
+    font-size: 0.75rem;
+  }
+  .img-fluid {
+    scale: 0.9;
+  }
+}
+
+/* Ultra small devices like older phones */
+@media (max-width: 360px) {
+  .about_greet {
+    font-size: 20vw;
+  }
+  p.park_font {
+    font-size: 0.7rem;
+  }
+  button.btn {
+    padding: 3px 10px;
+    font-size: 0.7rem;
+  }
+  .img-fluid {
+    scale: 0.9;
+  }
+}
+
   
