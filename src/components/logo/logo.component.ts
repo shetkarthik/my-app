@@ -10,9 +10,20 @@ import { CommonModule } from '@angular/common';
   styleUrl: './logo.component.css'
 })
 export class LogoComponent implements OnInit {
-  isHomeRoute: boolean = false;
+  isNavbarCollapsed = true; // Initially collapsed
+  isHomeRoute = false;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.isHomeRoute = event.url === '/'; // Adjust based on your routing setup
+      }
+    });
+  }
+
+  toggleNavbar(): void {
+    this.isNavbarCollapsed = !this.isNavbarCollapsed;
+  }
 
   ngOnInit(): void {
   }

@@ -1,23 +1,63 @@
-<div class='container-fluid mt-5 overflow-hidden home_background'>
+<div class="container-fluid mt-5 overflow-hidden home_background">
   <div class="row">
+    <div
+      class="col-lg-7 col-md-12 col-sm-12 col-12 display-none"
+   
+    >
+      <img
+        src="../../assets/images/home_imageed.jpg"
+        class="img-fluid d-block m-auto"
+        alt="Home Image"
+      />
+    </div>
 
-    <div class="col-lg-7 col-md-12 col-sm-12 col-12 display-none">
-      <img src="../../assets/images/home_imageed.jpg" class="img-fluid d-block m-auto" alt="Home Image" />
+    <div
+      class="col-lg-5 col-md-12 col-sm-12 col-12 width_container text-center"
+      [ngClass]="{ 'icon_bg': !isSmallScreen }"
+    >
+      <section *ngIf="isSmallScreen" class="small_home">
+        <div class="pill mb-2 park_font fw-bold greet_text">
+          <div>H</div>
+          <div>E</div>
+          <div>L</div>
+          <div>L</div>
+          <div>O</div>
+        </div>
+        <div class="pill mb-2 park_font fw-bold">I am Karthik Shet</div>
+        <div class="pill mb-2 bg-dark text-light park_font fw-bold">
+          Full stack Developer
+        </div>
+        <div class="pill mb-2 park_font fw-bold">
+          Before your Coffee get's cold
+        </div>
+        <div
+          class="pill mb-2 bg-dark text-light park_font fw-bold"
+          routerLink="/about-me"
+          routerLinkActive="active"
+        >
+          Let's Explore...!!
+        </div>
+      </section>
+
+      <section *ngIf="!isSmallScreen" class="large_screen">
+        <div class="card info_container">
+          <h1 class="about_greet">Hello!</h1>
+          <p class="park_font">
+            I am Karthik - <span class="fw-bold">Full stack Developer</span>
+          </p>
+          <p class="park_font">
+            Let’s explore the world of innovation, creativity, and technology
+            together
+          </p>
+          <button
+            class="btn btn-dark park_font p-3 fs-6 d-block m-auto"
+            routerLink="/about-me"
+            routerLinkActive="active"
+          >
+            Explore
+          </button>
+        </div>
+      </section>
     </div>
-    <!-- Text Column -->
-    <div class="col-lg-5 col-md-12 col-sm-12 col-12 width_container icon_bg">
-      <div class="card info_container">
- 
-        <h1 class="about_greet">Hello!</h1>
-        <p class="park_font">I am Karthik - 
-          <span class="fw-bold">Full stack Developer</span>
-        </p>
-        <p class="park_font">Let’s explore the world of innovation, creativity, and technology together</p>
-        <button class="btn btn-dark park_font p-3 fs-6 d-block m-auto" routerLink="/about-me" routerLinkActive="active">Explore</button>
-      </div>
-      
-    </div>
-    <!-- Image Column -->
-    
   </div>
 </div>

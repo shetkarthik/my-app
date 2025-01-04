@@ -26,3 +26,13 @@
     border-bottom: 2px solid;
     transition: all ease-in-out 1s;
 }
+
+.navbar-collapse.collapse {
+    display: none;
+  }
+  
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+  }
+  

@@ -14,10 +14,33 @@
     height: auto;
     scale: 0.9;
   }
+  .pill
+  {
+    border: 1px solid;
   
+    display: block;
+    margin: auto;
+    padding: 1.2rem;
+    
+  }
+
+  .pill_container
+  {
+    display: grid;
+    place-self: center;
+  }
+
+
   .park_font {
     font-family: "Parkinsans", sans-serif;
     letter-spacing: 1px;
+  }
+
+  .greet_text
+  {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
   }
   
   .tang_font {
@@ -26,6 +49,11 @@
   
   .about_greet {
     font-family: "Tangerine", cursive;
+    font-size: 10vw; 
+    
+  }
+  .about_head {
+    
     font-size: 10vw; 
     
   }
@@ -56,18 +84,7 @@
    
   }
 
-  /* .gif_container {
-    display: grid;
-    place-content: center;
-    text-align: center;
-    padding: 2rem;
-    background: url("https://static.vecteezy.com/system/resources/previews/041/328/409/non_2x/shelving-black-and-white-2d-line-cartoon-object-modern-furniture-for-apartment-decor-shelves-with-books-and-vase-isolated-outline-item-home-interior-monochromatic-flat-spot-illustration-vector.jpg");
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-    
-  
-  } */
+
 
   
 
